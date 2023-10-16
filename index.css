@@ -32,6 +32,10 @@ main {
     line-height: 1.6;
 }
 
+section {
+    margin: 3em 0;
+}
+
 a {
     color: var(--color-a);
     text-decoration: none;
