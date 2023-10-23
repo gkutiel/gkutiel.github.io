@@ -117,4 +117,13 @@ img.play {
     .content {
         padding: 1em;
     }
+
+    section,
+    .app,
+    .app:nth-child(odd) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
