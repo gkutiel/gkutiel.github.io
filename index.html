@@ -3,241 +3,150 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilad Kutiel – ML, NLP &amp; Computer Vision Researcher</title>
+    <meta name="description" content="Gilad Kutiel, PhD in Computer Science (Technion). Machine learning, deep learning, NLP and computer vision. Ex-Google, Amazon, Facebook.">
+    <meta name="author" content="Gilad Kutiel">
+    <meta name="theme-color" content="#9F4A54">
+    <link rel="canonical" href="https://kutiel.com/">
+    <link rel="icon" href="favicon.jpg">
 
-    <link rel='icon'
-        href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👍</text></svg>' />
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://kutiel.com/">
+    <meta property="og:title" content="Gilad Kutiel">
+    <meta property="og:description" content="Gilad Kutiel, PhD in Computer Science (Technion). Machine learning, deep learning, NLP and computer vision. Ex-Google, Amazon, Facebook.">
+    <meta property="og:image" content="https://kutiel.com/favicon.jpg">
+    <meta name="twitter:card" content="summary">
 
-    <link rel='stylesheet' href='/index.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/index.css">
 
-    <meta property="og:title" content="Gilad Kutiel" />
-    <meta property="og:description" content="PhD, ML, DL, NLP, CV, X{Google, Amazon, Facebook}." />
-    <meta property="og:image" content="https://kutiel.com/favicon.jpg" />
-
-    <title>Gilad Kutiel</title>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Gilad Kutiel",
+        "url": "https://kutiel.com/",
+        "image": "https://kutiel.com/favicon.jpg",
+        "jobTitle": "Algorithm Engineer",
+        "worksFor": { "@type": "Organization", "name": "Mobileye" },
+        "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "Technion – Israel Institute of Technology" }
+        ],
+        "knowsAbout": ["Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision"],
+        "sameAs": ["https://dblp.org/pid/56/8210.html"]
+    }
+    </script>
 </head>
 
 <body>
     <main>
-        <div class="header">
-            <img src="bg.jpg" alt="">
+        <header class="header">
+            <img src="bg.jpg" alt="" width="2048" height="1365">
             <h1>Gilad Kutiel</h1>
-            <h2>PhD, ML, DL, NLP, CV, X{Google, Amazon, Facebook}</h2>
-        </div>
+            <p class="tagline">PhD, ML, DL, NLP, CV, X{Google, Amazon, Facebook}</p>
+        </header>
+
+        <nav class="toc" aria-label="Table of contents">
+            <a href="#about">About</a>
+            <a href="#publications">Publications</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Side Projects</a>
+        </nav>
+
         <div class="content">
-            <!-- ABOuT -->
-            <section>
-                <h3>About</h3>
-                <p>I hold a Ph.D. in Computer Science from the Technion. My expertise spans machine learning, deep
-                    learning,
-                    NLP, and computer vision.</p>
+            <section id="about">
+                <h2>About</h2>
+                <p>I'm a researcher and engineer with a Ph.D. in Computer Science from the Technion, working across machine
+                    learning, deep learning, NLP, and computer vision.</p>
             </section>
 
-            <!-- PUBLICATIONS -->
-            <section>
-                <h3>Publications</h3>
-                <p>See my <a href="https://dblp.org/pid/56/8210.html" target="_blank">dblp page</a>.</p>
+            <section id="publications">
+                <h2>Publications</h2>
+                <p>See my <a href="https://dblp.org/pid/56/8210.html" target="_blank" rel="noopener">dblp page</a>.</p>
             </section>
 
-            <!-- EXPERIENCE -->
-            <section>
-                <h3>Experience</h3>
-                <div class="app">
-                    <img src="mobileye.jpg" alt="" srcset="">
+            <section id="experience">
+                <h2>Experience</h2>
+                <article class="app">
+                    <img src="mobileye.jpg" alt="Mobileye logo" width="128" height="128" loading="lazy">
                     <div class="desc">
-                        <h4>Algorithm Engineer @ Mobileye</h4>
-                        <p>Designing and deploying algorithms for driving monitoring systems.</p>
+                        <h3>Algorithm Engineer @ Mobileye</h3>
+                        <p>Designing and deploying algorithms for driver monitoring systems.</p>
                     </div>
-                </div>
-                <div class="app">
-                    <img src="verily.png" alt="" srcset="">
+                </article>
+                <article class="app">
+                    <img src="verily.png" alt="Verily logo" width="128" height="128" loading="lazy">
                     <div class="desc">
-                        <h4>Research Scientist @ Verily</h4>
-                        <p>I have designed a framework for uncertainty estimation applicable to image-to-image
-                            applications in general, with a specific focus on virtual staining.</p>
+                        <h3>Research Scientist @ Verily</h3>
+                        <p>I designed a framework for uncertainty estimation in image-to-image tasks, with a focus on virtual
+                            staining.</p>
                     </div>
-                </div>
-                <div class="app">
-                    <img src="amazon.svg" alt="" srcset="">
+                </article>
+                <article class="app">
+                    <img src="amazon.svg" alt="Amazon logo" width="128" height="128" loading="lazy">
                     <div class="desc">
-                        <h4>Applied Scientist @ Amazon</h4>
-                        <p>I created solutions for question answering and review summarization tailored for Alexa
-                            shopping. Additionally, I designed an algorithm that generates poems based on product
-                            reviews.</p>
+                        <h3>Applied Scientist @ Amazon</h3>
+                        <p>I built question answering and review summarization solutions for Alexa Shopping, and designed an
+                            algorithm that generates poems from product reviews.</p>
                     </div>
-                </div>
-                <div class="app">
-                    <img src="google.svg" alt="" srcset="">
+                </article>
+                <article class="app">
+                    <img src="google.svg" alt="Google logo" width="128" height="128" loading="lazy">
                     <div class="desc">
-                        <h4>Software Engineer @ Google</h4>
-                        <p>I engineered web services specifically optimized for low-end mobile devices, ensuring that
-                            users with less powerful hardware could still access and utilize online content seamlessly.
-                        </p>
+                        <h3>Software Engineer @ Google</h3>
+                        <p>I engineered web services optimized for low-end mobile devices, so users with less powerful
+                            hardware could still access online content seamlessly.</p>
                     </div>
-                </div>
-                <div class="app">
-                    <img src="ibm.svg" alt="" srcset="">
+                </article>
+                <article class="app">
+                    <img src="ibm.svg" alt="IBM logo" width="128" height="128" loading="lazy">
                     <div class="desc">
-                        <h4>Researcher @ IBM</h4>
-                        <p>I designed a trend detection algorithm for an enterprise activity stream platform.</p>
+                        <h3>Researcher @ IBM</h3>
+                        <p>I designed a trend-detection algorithm for an enterprise activity-stream platform.</p>
                     </div>
-                </div>
-                <div class="app">
-                    <img src="fb.svg" alt="" srcset="">
+                </article>
+                <article class="app">
+                    <img src="fb.svg" alt="Facebook logo" width="128" height="128" loading="lazy">
                     <div class="desc">
-                        <h4>Intern @ Facebook</h4>
-                        <p>I spearheaded the reimplementation of the messaging application for feature phones as part of
-                            the Snaptu team.</p>
+                        <h3>Intern @ Facebook</h3>
+                        <p>I led the reimplementation of the messaging app for feature phones as part of the Snaptu team.</p>
                     </div>
-                </div>
-                <div class="app">
-                    <img src="intel.svg" alt="" srcset="">
+                </article>
+                <article class="app">
+                    <img src="intel.svg" alt="Intel logo" width="128" height="128" loading="lazy">
                     <div class="desc">
-                        <h4>Intern @ Intel</h4>
-                        <p>I created software and applications tailored for location-based services.</p>
+                        <h3>Intern @ Intel</h3>
+                        <p>I built software and applications for location-based services.</p>
                     </div>
-                </div>
+                </article>
             </section>
 
-            <!-- SIDE PROJECTS -->
-            <section>
-                <h3>Side Projects</h3>
-
-                <div class="app">
-                    <img src="mozyq.svg" alt="" srcset="">
+            <section id="projects">
+                <h2>Side Projects</h2>
+                <article class="app">
+                    <img src="mozyq.svg" alt="mozyq.org logo" width="128" height="128" loading="lazy">
                     <div class="desc">
-                        <h4>mozyq.org</h4>
-                        <p><a href="https://mozyq.org/" target="_blank">mozyq.org</a> is a beautiful photo mosaic
-                            generator.</p>
+                        <h3>mozyq.org</h3>
+                        <p><a href="https://mozyq.org/" target="_blank" rel="noopener">mozyq.org</a> turns your photos into beautiful photo mosaics.</p>
                     </div>
-                </div>
-
-
-                <div class="app">
-                    <img src="https://tsk.monster/tsk.svg" alt="" srcset="">
+                </article>
+                <article class="app">
+                    <img src="appy.svg" alt="appy.fyi logo" width="128" height="128" loading="lazy">
                     <div class="desc">
-                        <h4>tsk.monster</h4>
-                        <p><a href="https://tsk.monster" target="_blank">tsk.monster</a> is a cute little tsk runner.
-                        </p>
+                        <h3>appy.fyi</h3>
+                        <p><a href="https://appy.fyi" target="_blank" rel="noopener">appy.fyi</a> surfaces Google Play apps that are losing users, backed by real reviews.</p>
                     </div>
-                </div>
-
-                <div class="app">
-                    <img src="python.svg" alt="" srcset="">
+                </article>
+                <article class="app">
+                    <img src="emojify.svg" alt="emojify.ing logo" width="128" height="128" loading="lazy">
                     <div class="desc">
-                        <h4>Detecty</h4>
-                        <p><a href="https://pypi.org/project/detecty/" target="_blank">Detecty</a> is a mobilenet based
-                            single car plate detection model.</p>
+                        <h3>emojify.ing</h3>
+                        <p><a href="https://emojify.ing" target="_blank" rel="noopener">emojify.ing</a> turns a short text into a styled emoji card.</p>
                     </div>
-                </div>
-
-                <div class="app">
-                    <img src="python.svg" alt="" srcset="">
-                    <div class="desc">
-                        <h4>plt-ocr</h4>
-                        <p><a href="https://pypi.org/project/plt-ocr/" target="_blank">plt-ocr</a> is a mobilenet based,
-                            single IL car plate OCR.</p>
-                    </div>
-                </div>
-
-                <!-- <div class="app">
-                    <img src="plate.svg" alt="" srcset="">
-                    <div class="desc">
-                        <h4>cars.vardale.org</h4>
-                        <p><a href="https://cars.vardale.org/" target="_blank">cars.vardale.org</a> - A collection of
-                            cool license plate photos.</p>
-                    </div>
-                </div> -->
-
-                <!-- <div class="app">
-                    <img src="https://www.poosh.me/icon.png" alt="" srcset="">
-                    <div class="desc">
-                        <h4>poosh.me</h4>
-                        <p><a href="https://www.poosh.me" target="_blank">poosh.me</a> - The world's simplest push
-                            notifications.</p>
-                    </div>
-                </div> -->
-
-                <!-- <div class="app">
-                    <img src="https://vardale.org/vardale.png" alt="" srcset="">
-                    <div class="desc">
-                        <h4>vardale.org</h4>
-                        <p><a href="https://vardale.org" target="_blank">vardale.org</a> is a whatsapp bot that plays
-                            wordle.</p>
-                    </div>
-                </div> -->
-
-                <div class="app">
-                    <img src="https://play-lh.googleusercontent.com/-c_LHcEX4WsTI-HPrn-ZbZKPWxazb4OZi90IsPmQExQkKmOlgrmaaHNMgaK06108=w240-h480-rw"
-                        alt="" srcset="">
-                    <div class="desc">
-                        <h4>NumNumNum</h4>
-                        <p><a href="https://play.google.com/store/apps/details?id=today.dailyquiz.snake"
-                                target="_blank">NumNumNum</a> is a fun and simple multiplayer strategy game.</p>
-                    </div>
-                </div>
-
-                <!-- <div class="app">
-                    <img src="https://convex.red/cat.png" alt="" srcset="">
-                    <div class="desc">
-                        <h4>convex.red</h4>
-                        <p><a href="https://convex.red" target="_blank">convex.red</a> offers a daily challenging
-                            coloring
-                            puzzle. The objective is to recolor a 6x6 grid with minimal changes, ensuring that each
-                            color
-                            induces a connected component.</p>
-                    </div>
-                </div> -->
-
-                <!-- <div class="app">
-                    <img src="face.svg" alt="" srcset="">
-                    <div class="desc">
-                        <h4>Who Is It.today?</h4>
-                        <p><a href="https://whoisit.today" target="_blank">whoisit.today</a> is a 20 questions game for
-                            the ChatGPT era.</p>
-                    </div>
-                </div> -->
-
-                <div class="app">
-                    <img src="og.svg" alt="" srcset="">
-                    <div class="desc">
-                        <h4>ogcrazy</h4>
-                        <p><a href="https://ogcrazy.com" target="_blank">ogcrazy</a> is a web service that allows
-                            you to share short messages with custom Open Graph content.</p>
-                    </div>
-                </div>
-
-                <!-- <div class="app">
-                    <img src="https://bankidos.com/favicon.png" alt="" srcset="">
-                    <div class="desc">
-                        <h4>Bankidos</h4>
-                        <p><a href="https://bankidos.com" target="_blank">bankidos</a> is a simple pocket money manager
-                            app.</p>
-                    </div>
-                </div> -->
-
-                <!-- <div class="app">
-                    <img src="https://dailyquiz.today/og.transparent.png" alt="" srcset="">
-                    <div class="desc">
-                        <h4>dailyquiz.today</h4>
-                        <p><a href="https://dailyquiz.today" target="_blank">dailyquiz.today</a> is a collection of
-                            mobile
-                            apps, featuring a short daily brain exercise.</p>
-                    </div>
-                </div> -->
-
-                <!-- <div class="app">
-                    <img src="tv.svg" alt="" srcset="">
-                    <div class="desc">
-                        <h4>TvPy</h4>
-                        <p><a href="https://github.com/gkutiel/tvpy" target="_blank">TvPy</a> is an open source command
-                            line
-                            media manager.</p>
-                    </div>
-                </div> -->
+                </article>
             </section>
-        </div>
         </div>
     </main>
 </body>

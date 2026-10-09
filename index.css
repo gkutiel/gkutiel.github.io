@@ -32,8 +32,23 @@ main {
     line-height: 1.6;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4em;
+}
+
 section {
-    margin: 3em 0;
+    margin: 0 0 6em;
+}
+
+section h2 {
+    margin: 0 0 2em;
+    padding: .2em 0 .2em .6em;
+    border-left: 6px solid var(--color-a);
+    font-size: 1.5em;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #222;
 }
 
 a {
@@ -61,11 +76,38 @@ a:hover {
     left: 1em;
 }
 
-.header h2 {
+.header .tagline {
     position: absolute;
+    margin: 0;
     color: var(--bg-color);
     bottom: 1em;
     right: 1em;
+}
+
+.header>img {
+    display: block;
+    height: auto;
+    max-height: 360px;
+    object-fit: cover;
+}
+
+.toc {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5em 2em;
+    padding: .8em 1em;
+    background: var(--bg-color);
+    border-bottom: 1px solid #e3e3e3;
+    font-size: .9em;
+}
+
+.toc a {
+    text-transform: uppercase;
+    letter-spacing: .05em;
 }
 
 .content {
@@ -77,40 +119,48 @@ a:hover {
 .app {
     display: flex;
     flex-direction: row;
-    align-items: start;
-    margin-top: 3em;
+    align-items: flex-start;
+    margin-top: 2em;
 }
 
-.app:nth-child(odd) {
+.app:nth-of-type(even) {
     flex-direction: row-reverse;
 }
 
 .app img {
     display: block;
-    max-width: 8em;
-    max-height: 8em;
+    flex: none;
+    width: 8em;
+    height: 8em;
+    object-fit: contain;
     margin: 0 2em;
 }
 
-img.play {
-    max-width: 12em;
-    transform: translateX(-1em);
+.app h3 {
+    margin: 0 0 .3em;
+    font-size: 1.1em;
+    color: #222;
+}
+
+.app p {
+    margin: 0;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--color-a);
+    outline-offset: 2px;
 }
 
 @media (max-width: 800px) {
-
-    .header h2 {
-        position: absolute;
-        color: var(--bg-color);
-        bottom: 1em;
+    .header .tagline {
         left: 1em;
-        font-size: 1em;
+        font-size: .8em;
     }
 
-
     main {
-        width: 100vw;
+        width: 100%;
         margin: 0;
+        border: 0;
         box-shadow: none;
     }
 
@@ -118,12 +168,14 @@ img.play {
         padding: 1em;
     }
 
-    section,
     .app,
-    .app:nth-child(odd) {
-        display: flex;
+    .app:nth-of-type(even) {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        text-align: center;
+    }
+
+    .app img {
+        margin: 0 0 1em;
     }
 }
